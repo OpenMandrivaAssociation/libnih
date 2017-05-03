@@ -12,6 +12,8 @@ Summary: Library of small C functions
 URL: http://launchpad.net/libnih
 License: GPLv2
 Group: System/Libraries
+BuildRequires: pkgconfig(dbus-1)
+BuildRequires: pkgconfig(expat)
 
 %description
 libnih is roughly equivalent to other C libraries such as glib, except that

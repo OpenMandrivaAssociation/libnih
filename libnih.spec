@@ -6,7 +6,7 @@
 
 Name: libnih
 Version: 1.0.3
-Release: 2
+Release: 3
 Source0: https://launchpad.net/libnih/%(echo %{version} |cut -d. -f1-2)/%{version}/+download/libnih-%{version}.tar.gz
 Summary: Library of small C functions
 URL: http://launchpad.net/libnih

@@ -1,4 +1,4 @@
-%define _filter_GLIBC_PRIVATE 1
+%define __filter_GLIBC_PRIVATE 1
 %define major 1
 %define libname %mklibname nih %{major}
 %define dbuslibname %mklibname nih-dbus %{major}

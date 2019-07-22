@@ -6,7 +6,7 @@
 
 Name: libnih
 Version: 1.0.3
-Release: 3
+Release: 4
 Source0: https://launchpad.net/libnih/%(echo %{version} |cut -d. -f1-2)/%{version}/+download/libnih-%{version}.tar.gz
 Summary: Library of small C functions
 URL: http://launchpad.net/libnih
@@ -14,6 +14,7 @@ License: GPLv2
 Group: System/Libraries
 BuildRequires: pkgconfig(dbus-1)
 BuildRequires: pkgconfig(expat)
+Patch0:	libnih-1.0.3-signal-race.patch
 
 %description
 libnih is roughly equivalent to other C libraries such as glib, except that
@@ -70,6 +71,7 @@ invent arbitrary typedefs for perfectly good C types.
 
 %prep
 %setup -q
+%autopatch -p0
 if [ "%{_lib}" != "lib" ]; then
 	sed -i -e 's,lib/pkgconfig,%{_lib}/pkgconfig,g' */Makefile.am
 fi

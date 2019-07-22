@@ -57,6 +57,7 @@ invent arbitrary typedefs for perfectly good C types.
 Summary: Development files for %{name}
 Group: Development/C
 Requires: %{libname} = %{EVRD}
+Requires: %{dbuslibname} = %{EVRD}
 
 %description -n %{devname}
 Development files (Headers etc.) for %{name}.

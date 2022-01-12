@@ -77,8 +77,7 @@ if [ "%{_lib}" != "lib" ]; then
 	sed -i -e 's,lib/pkgconfig,%{_lib}/pkgconfig,g' */Makefile.am
 fi
 
-export LDFLAGS="$LDFLAGS -Wl,--allow-multiple-definition"
-%configure --enable-threading 
+%configure --enable-threading
 
 %build
 %make

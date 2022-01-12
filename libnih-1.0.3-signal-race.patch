@@ -14,8 +14,8 @@ the next time around.
 This was discovered & triaged by Jeffy Chen from Rockchip.
 
 === modified file 'nih/signal.c'
---- nih/signal.c	2009-06-23 09:29:37 +0000
-+++ nih/signal.c	2015-05-21 08:12:11 +0000
+--- a/nih/signal.c	2009-06-23 09:29:37 +0000
++++ b/nih/signal.c	2015-05-21 08:12:11 +0000
 @@ -337,17 +337,37 @@
  
  	nih_signal_init ();

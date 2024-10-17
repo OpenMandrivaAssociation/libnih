@@ -9,7 +9,7 @@ Version: 1.0.3
 Release: 6
 Source0: https://launchpad.net/libnih/%(echo %{version} |cut -d. -f1-2)/%{version}/+download/libnih-%{version}.tar.gz
 Summary: Library of small C functions
-URL: http://launchpad.net/libnih
+URL: https://launchpad.net/libnih
 License: GPLv2
 Group: System/Libraries
 BuildRequires: pkgconfig(dbus-1)

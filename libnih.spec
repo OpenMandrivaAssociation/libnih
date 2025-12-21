@@ -12,6 +12,11 @@ Summary: Library of small C functions
 URL: https://launchpad.net/libnih
 License: GPLv2
 Group: System/Libraries
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(dbus-1)
 BuildRequires: pkgconfig(expat)
 Patch0:	libnih-1.0.3-signal-race.patch
